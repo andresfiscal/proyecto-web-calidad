@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>pares</title>
+				<link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+				<h1> calcular si un numero es par o impar </h1>
+        <p> ingrese un numero <input type="number" id="num" name="numero"></p>
+        <input type="button" id="bot" value="Enviar">
+
+        <script type="text/javaScript">
+            var boton = document.getElementById('bot')
+            var reset = document.getElementById('rest')
+            var numero = document.getElementById('num')
+            boton.addEventListener("click", calcular, false)
+
+            function calcular(event){
+
+                if(numero.value%2==0){
+                    alert("el numero "+ parseInt(numero.value) +   " es par")
+                }else if(numero.value%2==1){
+                    alert("el numero " + parseInt(numero.value) +" es impar")
+                }
+            }
+
+        </script>
+    </body>
+</html>
